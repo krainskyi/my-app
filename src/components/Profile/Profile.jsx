@@ -1,12 +1,16 @@
 import React from 'react';
-// import s from './Profile.module.css';
+import s from './Profile.module.css';
 import MyPosts from './MyPosts/MyPosts';
-import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 const Profile =()=>{
     return (
     <div >
-      <ProfileInfo/>
+         <div className={s.content}>
+        <img src='http://www.photoplato.com/photoplato/23751-free-large-desktop-wallpaper.png'/>
+      </div>
+      <div>
+        avatar+discription
+      </div>
       <MyPosts/>
       </div>
       
