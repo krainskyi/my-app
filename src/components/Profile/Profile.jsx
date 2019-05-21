@@ -1,19 +1,17 @@
 import React from 'react';
 import s from './Profile.module.css';
 import MyPosts from './MyPosts/MyPosts';
+import ProfileInfo from './MyPosts/ProfileInfo/ProfileInfo';
+import MyPostsContainer from './MyPosts/MyPostContainer';
 
-const Profile =()=>{
-    return (
+const Profile = (props) => {
+debugger;
+  return (
     <div >
-         <div className={s.content}>
-        <img src='http://www.photoplato.com/photoplato/23751-free-large-desktop-wallpaper.png'/>
-      </div>
-      <div>
-        avatar+discription
-      </div>
-      <MyPosts/>
-      </div>
-      
-    );
+      <ProfileInfo />
+      <MyPostsContainer store={props.store}   />
+    </div>
+
+  );
 }
 export default Profile;
